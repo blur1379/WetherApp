@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B803FFC3282F5C0600DC97E8 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803FFC2282F5C0600DC97E8 /* CityModel.swift */; };
+		B803FFC5282F5E2300DC97E8 /* WetherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803FFC4282F5E2300DC97E8 /* WetherModel.swift */; };
+		B803FFC8282F800B00DC97E8 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803FFC7282F800B00DC97E8 /* CityViewModel.swift */; };
+		B803FFCB2831ABAE00DC97E8 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803FFCA2831ABAE00DC97E8 /* Status.swift */; };
+		B803FFD02832C75500DC97E8 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803FFCF2832C75500DC97E8 /* Search.swift */; };
+		B836CBD12833AAE4000D72EA /* WetherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD02833AAE4000D72EA /* WetherViewModel.swift */; };
+		B836CBD32833AF0F000D72EA /* CurentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD22833AF0F000D72EA /* CurentWeatherView.swift */; };
+		B836CBD52834C168000D72EA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD42834C168000D72EA /* DailyView.swift */; };
 		B8DE34EE282D7842002706DE /* WetherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE34ED282D7842002706DE /* WetherAppApp.swift */; };
 		B8DE34F0282D7842002706DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE34EF282D7842002706DE /* ContentView.swift */; };
 		B8DE34F2282D7845002706DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DE34F1282D7845002706DE /* Assets.xcassets */; };
 		B8DE34F5282D7845002706DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DE34F4282D7845002706DE /* Preview Assets.xcassets */; };
+		B8DE34FC282D78B2002706DE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE34FB282D78B2002706DE /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B803FFC2282F5C0600DC97E8 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		B803FFC4282F5E2300DC97E8 /* WetherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherModel.swift; sourceTree = "<group>"; };
+		B803FFC7282F800B00DC97E8 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		B803FFC9282FAA4C00DC97E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B803FFCA2831ABAE00DC97E8 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		B803FFCF2832C75500DC97E8 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		B836CBD02833AAE4000D72EA /* WetherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherViewModel.swift; sourceTree = "<group>"; };
+		B836CBD22833AF0F000D72EA /* CurentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurentWeatherView.swift; sourceTree = "<group>"; };
+		B836CBD42834C168000D72EA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
 		B8DE34EA282D7842002706DE /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DE34ED282D7842002706DE /* WetherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppApp.swift; sourceTree = "<group>"; };
 		B8DE34EF282D7842002706DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8DE34F1282D7845002706DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8DE34F4282D7845002706DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B8DE34FB282D78B2002706DE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B803FFC6282F7FF500DC97E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B803FFC7282F800B00DC97E8 /* CityViewModel.swift */,
+				B836CBD02833AAE4000D72EA /* WetherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B803FFCE2832C73400DC97E8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B803FFCF2832C75500DC97E8 /* Search.swift */,
+				B836CBD22833AF0F000D72EA /* CurentWeatherView.swift */,
+				B8DE34FB282D78B2002706DE /* Home.swift */,
+				B8DE34EF282D7842002706DE /* ContentView.swift */,
+				B836CBD42834C168000D72EA /* DailyView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		B8DE34E1282D7842002706DE = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +91,11 @@
 		B8DE34EC282D7842002706DE /* WetherApp */ = {
 			isa = PBXGroup;
 			children = (
+				B803FFC9282FAA4C00DC97E8 /* Info.plist */,
+				B803FFCE2832C73400DC97E8 /* view */,
+				B803FFC6282F7FF500DC97E8 /* ViewModel */,
+				B8DE34FD282D7924002706DE /* Model */,
 				B8DE34ED282D7842002706DE /* WetherAppApp.swift */,
-				B8DE34EF282D7842002706DE /* ContentView.swift */,
 				B8DE34F1282D7845002706DE /* Assets.xcassets */,
 				B8DE34F3282D7845002706DE /* Preview Content */,
 			);
@@ -65,6 +108,16 @@
 				B8DE34F4282D7845002706DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B8DE34FD282D7924002706DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B803FFC2282F5C0600DC97E8 /* CityModel.swift */,
+				B803FFC4282F5E2300DC97E8 /* WetherModel.swift */,
+				B803FFCA2831ABAE00DC97E8 /* Status.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B803FFD02832C75500DC97E8 /* Search.swift in Sources */,
+				B803FFC5282F5E2300DC97E8 /* WetherModel.swift in Sources */,
+				B836CBD52834C168000D72EA /* DailyView.swift in Sources */,
+				B836CBD12833AAE4000D72EA /* WetherViewModel.swift in Sources */,
 				B8DE34F0282D7842002706DE /* ContentView.swift in Sources */,
+				B803FFC3282F5C0600DC97E8 /* CityModel.swift in Sources */,
+				B803FFCB2831ABAE00DC97E8 /* Status.swift in Sources */,
+				B8DE34FC282D78B2002706DE /* Home.swift in Sources */,
+				B803FFC8282F800B00DC97E8 /* CityViewModel.swift in Sources */,
+				B836CBD32833AF0F000D72EA /* CurentWeatherView.swift in Sources */,
 				B8DE34EE282D7842002706DE /* WetherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +331,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WetherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WetherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,11 +361,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WetherApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WetherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -12,6 +12,8 @@ struct WetherAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            Home(lat: -12.853783, lon: -73.6051796)
+            
         }
     }
 }
