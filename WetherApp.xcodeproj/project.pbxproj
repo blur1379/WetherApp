@@ -15,6 +15,7 @@
 		B836CBD12833AAE4000D72EA /* WetherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD02833AAE4000D72EA /* WetherViewModel.swift */; };
 		B836CBD32833AF0F000D72EA /* CurentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD22833AF0F000D72EA /* CurentWeatherView.swift */; };
 		B836CBD52834C168000D72EA /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B836CBD42834C168000D72EA /* DailyView.swift */; };
+		B86D159C2836E94300700F48 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86D159B2836E94300700F48 /* Background.swift */; };
 		B8DE34EE282D7842002706DE /* WetherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE34ED282D7842002706DE /* WetherAppApp.swift */; };
 		B8DE34F0282D7842002706DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE34EF282D7842002706DE /* ContentView.swift */; };
 		B8DE34F2282D7845002706DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DE34F1282D7845002706DE /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		B836CBD02833AAE4000D72EA /* WetherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherViewModel.swift; sourceTree = "<group>"; };
 		B836CBD22833AF0F000D72EA /* CurentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurentWeatherView.swift; sourceTree = "<group>"; };
 		B836CBD42834C168000D72EA /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		B86D159B2836E94300700F48 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		B8DE34EA282D7842002706DE /* WetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DE34ED282D7842002706DE /* WetherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WetherAppApp.swift; sourceTree = "<group>"; };
 		B8DE34EF282D7842002706DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				B8DE34FB282D78B2002706DE /* Home.swift */,
 				B8DE34EF282D7842002706DE /* ContentView.swift */,
 				B836CBD42834C168000D72EA /* DailyView.swift */,
+				B86D159B2836E94300700F48 /* Background.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				B803FFC8282F800B00DC97E8 /* CityViewModel.swift in Sources */,
 				B836CBD32833AF0F000D72EA /* CurentWeatherView.swift in Sources */,
 				B8DE34EE282D7842002706DE /* WetherAppApp.swift in Sources */,
+				B86D159C2836E94300700F48 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WetherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PU53245X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WetherApp/Info.plist;
@@ -359,6 +364,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WetherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PU53245X2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WetherApp/Info.plist;

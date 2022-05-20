@@ -47,10 +47,7 @@ struct CurentWeatherView: View {
             .padding(.horizontal , 26)
             .padding(.top , 48)
             HStack{
-                Image("Sun")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 145, height: 145, alignment: .center)
+                WetherViewModel.iconForWeather(icon: "\(curentWeather.weather.count > 0 ? curentWeather.weather[0].icon : "01d")3d")
                 VStack(spacing: 8){
                     Text("Today")
                         .fontWeight(.bold)
@@ -125,6 +122,6 @@ struct CurentWeatherView: View {
 
 struct CurentWeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        CurentWeatherView(curentWeather: Current(temp: 24, humidity: 32, wind_speed: 12, clouds: 12, weather: [Weather(id: 801, main: "Clouds", description: "overcast clouds", icon: "01n")]), name: "London")
+        CurentWeatherView(curentWeather: Current(temp: 24, humidity: 32, wind_speed: 12, clouds: 12, weather: [Weather(id: 801, main: "Clouds", description: "overcast clouds", icon: "01d")]), name: "London")
     }
 }

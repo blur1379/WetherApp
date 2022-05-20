@@ -171,7 +171,7 @@ struct DailyView: View {
                         itemDay(title: "max", temp: dailyWeather.temp.max)
                         itemDay(title: "night", temp: dailyWeather.temp.night)
                         itemDay(title: "eve", temp: dailyWeather.temp.eve)
-                        itemDay(title: "morn", temp: dailyWeather.temp.max)
+                        itemDay(title: "morn", temp: dailyWeather.temp.morn)
                             .padding(.trailing)
                     }
                     

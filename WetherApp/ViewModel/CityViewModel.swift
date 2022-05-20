@@ -16,11 +16,8 @@ class CityViewModel : ObservableObject{
         let urlencoding = urlString.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
          guard let url = URL(string: urlencoding ) else {
              fatalError("Missing URL")
-             
          }
-
          let urlRequest = URLRequest(url: url)
-
          let dataTask = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
              if let error = error {
                  print("Request error: ", error)
@@ -41,7 +38,6 @@ class CityViewModel : ObservableObject{
                      } catch let error {
                          print("Error decoding: ", error)
                          self.statusOfApi = .ERROR
-
                      }
                  }
              }else{

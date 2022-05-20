@@ -15,7 +15,6 @@ struct Search: View {
     
     //MARK: -BODY
     var body: some View {
-        //Rectangle 5
         VStack {
             HStack{
                 Button {
@@ -64,12 +63,10 @@ struct Search: View {
                                     .foregroundColor(.black)
                                     .fontWeight(.bold)
                                     .padding()
-//                                    .frame(maxWidth: .infinity, alignment: .center)
                                 Spacer()
                                 Text(item.state)
                                     .foregroundColor(.black)
                                     .opacity(0.7)
-//                                    .frame(maxWidth: .infinity,alignment: .center)
                                 Spacer()
                               Image(systemName: "chevron.right")
                                     .resizable()
@@ -108,6 +105,7 @@ struct Search: View {
                 }
             }//:SCROLL
         }//:VSTACK
+        .background(Background())
     }
 }
 

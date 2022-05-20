@@ -80,6 +80,12 @@ class WetherViewModel : ObservableObject{
                 .scaledToFit()
                 .foregroundStyle(.teal )
                 .frame(width: 31, height: 31, alignment: .center)
+        case "50d","50n":
+            Image(systemName: "wind")
+                .resizable()
+                .scaledToFit()
+                .foregroundStyle(.teal )
+                .frame(width: 31, height: 31, alignment: .center)
         case "day":
             Image(systemName: "sun.max.circle")
                 .resizable()
@@ -90,7 +96,7 @@ class WetherViewModel : ObservableObject{
             Image(systemName: "thermometer.sun")
                 .resizable()
                 .scaledToFit()
-                .foregroundStyle(.blue , .yellow)
+                .foregroundStyle(.red , .yellow)
                 .frame(width: 31, height: 31, alignment: .center)
         case "min":
             Image(systemName: "thermometer.snowflake")
@@ -116,6 +122,54 @@ class WetherViewModel : ObservableObject{
                 .scaledToFit()
                 .foregroundStyle(.blue, .yellow)
                 .frame(width: 31, height: 31, alignment: .center)
+        case "01d3d":
+            Image("01d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "02d3d":
+            Image("02d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "03d3d","03n3d":
+            Image("03d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "04d3d","04n3d":
+            Image("04d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "09d3d","09n3d":
+            Image("09d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "10d3d":
+            Image("10d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "11d3d", "11n3d":
+            Image("11d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+        case "13d3d","13n3d":
+            Image("13d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+
+        case "50d3d","50n3d":
+            Image("50d3d")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 150, height: 150, alignment: .center)
+
+            
         default:
             Image(systemName: "")
         }
