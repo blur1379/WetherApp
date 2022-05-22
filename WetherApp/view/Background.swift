@@ -11,7 +11,7 @@ struct Background: View {
     //MARK: -PROPERTIES
     @State private var randomCircle = Int.random(in: 12...16)
     @State private var isAnimating : Bool = false
-    
+    let images:[String] = ["6","7","8","9","10","11"]
     //MARK: -FUNCTION
     
     //1. RANDOM CORDINATE
@@ -40,9 +40,8 @@ struct Background: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                ForEach(0...randomCircle , id: \.self){ item in
-                    Circle()
-                        .foregroundColor(.gray)
+                ForEach(images , id: \.self){ item in
+                    Image(item)
                         .opacity(0.15)
                         .frame(width: randomSize() , height: randomSize(), alignment: .center)
                         .scaleEffect( isAnimating ? randomScale() : 1)
@@ -61,7 +60,7 @@ struct Background: View {
                         }
                 }
             }
-         
+            .background(.blue)
             .drawingGroup()
         }   .ignoresSafeArea()
     }

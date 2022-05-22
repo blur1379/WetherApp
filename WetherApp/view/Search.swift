@@ -43,6 +43,12 @@ struct Search: View {
             .padding(.vertical,8)
             .padding(.horizontal , 16)
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color("strok"),lineWidth: 2))
+            .background(
+                Color.white
+                    .cornerRadius(16)
+                    .blur(radius: 3)
+                    .opacity(0.5)
+            )
             .padding(30)
             .alert("enter city name", isPresented: $showingAlert) {
                 Button("OK", role: .cancel) { }
@@ -52,39 +58,49 @@ struct Search: View {
             ScrollView{
                 switch cityModel.statusOfApi {
                 case .SUCSESFULL :
-                    ForEach(self.cityModel.city ,id: \.name){ item in
-                        NavigationLink {
-                            Home(lat: item.lat, lon: item.lon, name: item.name)
-                                .navigationBarHidden(true)
-                                .navigationBarBackButtonHidden(true)
-                        } label: {
-                            HStack{
-                                Text(item.name)
-                                    .foregroundColor(.black)
-                                    .fontWeight(.bold)
-                                    .padding()
-                                Spacer()
-                                Text(item.state)
-                                    .foregroundColor(.black)
-                                    .opacity(0.7)
-                                Spacer()
-                              Image(systemName: "chevron.right")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .foregroundStyle(.black )
-                                    .opacity(0.5)
-                                    .frame(width: 18, height: 18, alignment: .center)
-                                    
-                                    .padding(.trailing,8)
+                    if self.cityModel.city.count > 0 {
+                        ForEach(self.cityModel.city ,id: \.name){ item in
+                            NavigationLink {
+                                Home(lat: item.lat, lon: item.lon, name: item.name)
+                                    .navigationBarHidden(true)
+                                    .navigationBarBackButtonHidden(true)
+                            } label: {
+                                HStack{
+                                    Text(item.name)
+                                        .foregroundColor(.black)
+                                        .fontWeight(.bold)
+                                        .padding()
+                                    Spacer()
+                                    Text(item.state)
+                                        .foregroundColor(.black)
+                                        .opacity(0.7)
+                                    Spacer()
+                                  Image(systemName: "chevron.right")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundStyle(.black )
+                                        .opacity(0.5)
+                                        .frame(width: 18, height: 18, alignment: .center)
+                                        
+                                        .padding(.trailing,8)
 
+                                }
                             }
-                        }
-                        .frame(maxWidth: .infinity)
-                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color("strok"), lineWidth: 2))
-                        .background(Color("BackItemSearch"))
-                        .cornerRadius(16)
-                        .padding(.horizontal)
-                    }//:LOOP
+                            .frame(maxWidth: .infinity)
+                            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color("strok"), lineWidth: 2))
+                            .background(Color("BackItemSearch"))
+                            .cornerRadius(16)
+                            .padding(.horizontal)
+                        }//:LOOP
+
+                    }else{
+                        Text("No cities found")
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.red)
+                            .padding()
+                            .background(Color.black.opacity(0.5))
+                            .cornerRadius(16)
+                    }
                 case .ERROR :
                     Button {
                         cityModel.fetchCity(cityName: cityName)

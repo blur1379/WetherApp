@@ -11,6 +11,8 @@ class CityViewModel : ObservableObject{
     @Published var city : [CityModel] = []
     @Published var statusOfApi : Status = .NONE
     func fetchCity(cityName : String) {
+        city = []
+        
         statusOfApi = .INPROGRESS
         let urlString = "http://api.openweathermap.org/geo/1.0/direct?q=\(cityName)&limit=7&appid=ac870ee92ead96367b38dc93605b3d6c"
         let urlencoding = urlString.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!
@@ -37,7 +39,9 @@ class CityViewModel : ObservableObject{
                          
                      } catch let error {
                          print("Error decoding: ", error)
-                         self.statusOfApi = .ERROR
+                         self.statusOfApi = .SUCSESFULL
+                         
+                         
                      }
                  }
              }else{
